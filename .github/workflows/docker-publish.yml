@@ -2,11 +2,11 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ "master", "main" ]
+    branches: [ "master", "main", "dev1" ]
     # 当发布新版本时触发
     tags: [ 'v*.*.*' ]
   pull_request:
-    branches: [ "master", "main" ]
+    branches: [ "master", "main", "dev1" ]
   workflow_dispatch:  # 允许手动触发    
 
 env:
